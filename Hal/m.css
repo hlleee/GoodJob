@@ -1,0 +1,309 @@
+/* 만들어놓고 필요한 곳에서 쓸 수 있다 */
+:root {
+    --text-color: #eee5e9;
+    --background-color: #567c32;
+    --accent-color: #81c147;
+}
+
+  /* 폰트는 최상위 컴포넌트에 */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .body {
+    margin: 0;
+  } */
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar {
+    position:sticky;
+    top:0;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 22px 12px;
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+.navbar-logo {
+    font-size: 30px;
+    /* color: var(--text-color); */
+}
+
+.navbar-logo i {
+    color: var(--accent-color);
+    margin-left: 30px;
+}
+
+  /* menu */
+
+.navbar-menu {
+    display: flex;
+    padding-left: 0px;
+    list-style: none;
+    font-size: 24px;
+    font-family: "Black Han Sans", sans-serif;
+}
+.navbar-menu li {
+    padding: 15px 55px;
+    word-spacing: 50px;
+}
+
+.navbar-menu li:hover {
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+  /* icon */
+.navbar-right {
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.navbar-right li {
+    font-size: larger;
+    padding: 8px 12px;
+}
+
+.link_text:hover{
+    text-decoration: underline;
+}
+.navbar-more {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    ￼ .navbar-menu a {
+        display: block;
+    }
+
+    .navbar-right {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar-more {
+        display: block;
+    }
+
+    .navbar-menu.active,
+    .navbar-icon.active {
+        display: flex;
+    }
+
+}
+
+section {
+    padding : 20px;
+    margin : 23px;
+    background-color: green;	 
+    height: 700px;
+    float:left;
+    width:82%;
+}
+
+
+article {
+    background-color: #999;
+    display: flex;
+}
+.container{
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+}
+/* 내정보,내가속한방 */
+.area1{
+    width: 40%;
+    background-color: #03cf5d;
+    display: block;
+}
+/* 내정보 */
+.myinfo{
+    background-color: deeppink;
+    height: 37%;
+    padding: 20px;
+}
+.myinfo_in{
+    background-color: darkgoldenrod;
+}
+/* 내가속한방 */
+.myroom{
+    background-color: #567c32;
+    padding: 20px;
+    height: 63%;
+}
+.myroom_in{
+    background-color: darkmagenta;
+    height: 285px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.inroom{
+    background-color: chartreuse;
+    margin: 5px;
+    word-break: break-all;  /*줄바꿈*/
+}
+.inroom_table{
+    background-color: #03cf5d;
+    height: 260px;
+    width: 100%;
+}
+/* 내가 속한방 한줄소개 */
+.soge{
+    height: 50px;
+    float: left;
+}
+.area2{
+    width: 60%;
+    background-color: aqua;
+}
+
+/* 모든방 */
+.gesipan{
+    background-color: crimson;
+    padding: 20px;
+    width: 100%;
+}
+.gesipan_in{
+    background-color: #03cf5d;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.room{
+    background-color: aqua;
+    margin: 5px;
+}
+
+/*aside*/
+.aside_container{
+    display: flex;
+    justify-content: space-between;
+}
+/*접속된 사람들 이름들어가는부분*/
+.aside_item{
+    flex-grow: 1;
+}
+.aside_item:nth-child(1){height: 80%; border-spacing: 10px;}
+
+.aside_item:nth-child(2){
+    width: 100%;
+    height: 50px; 
+    text-align: center;
+    background-color: #567c32;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+/* 푸터 */
+footer {
+    padding: 30px;
+    color: black; 
+    margin : 23px;
+    height: 150px;
+    font-size: 12px;
+    background-color: blue;
+    position: relatiev;
+    clear: both;
+    width:82%;
+}
+.notice_box {
+    flex: 1;
+    display: flex;
+    justify-content: space-between; /* 양끝 정렬 */
+    align-items: center;
+    border-bottom: 1px solid #f1f3f6;
+}
+.notice_box a {
+    font-weight: bold;
+    color: black;
+}
+.aside_box {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f3f6;
+}
+.area_user {
+    flex: 4;
+    line-height: 2em; /* 줄간격 */
+}
+.area_user_row {
+    display: flex;
+}
+.area_user_row span {
+    flex: 1;
+}
+.area_user_row ul {
+    flex: 6;
+}
+.aur_title {
+    font-size: 13px;
+    font-weight: bold;
+}
+.area_user_row ul > li {
+    display: inline-block; /* li 수평정렬하는 방법 */
+    margin-left: 8px;
+}
+.area_col {
+    flex: 1;
+    display: flex;
+}
+.area_col .ac_content {
+    line-height: 20px;
+}
+.area_col .ac_img {
+    width: 60px;
+    height: 60px;
+}
+.bottom_box {
+    flex: 3;
+    padding-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.bottom_box ul > li {
+    display: inline-block; /* 수평정렬 */
+    margin-left: 8px;
+}
+.bottom_box ul > li:last-child { /* 마지막 li요소 (Naver Corp.) 굵게 */
+    font-weight: bold;
+}
+/* 재사용 클래스 */
+.color_naver {
+    color: #03cf5d;
+}
+.text_bold-13 {
+    font-weight: bold;
+    font-size: 13px;
+}
