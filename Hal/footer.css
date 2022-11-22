@@ -32,119 +32,16 @@
     width: 100%;
   }
   
-  .navbar-logo {
-    font-size: 30px;
-    /* color: var(--text-color); */
-  }
-  
-  .navbar-logo i {
-    color: var(--accent-color);
-    margin-left: 30px;
-  }
-  
-  /* menu */
-  
-  .navbar-menu {
-    display: flex;
-    padding-left: 0px;
-    list-style: none;
-    font-size: 24px;
-    font-family: "Black Han Sans", sans-serif;
-  }
-  .navbar-menu li {
-    padding: 15px 55px;
-    word-spacing: 50px;
-  }
-  
-  .navbar-menu li:hover {
-    background-color: var(--accent-color);
-    border-radius: 5px;
-  }
-  
-  /* icon */
-  .navbar-right {
-    justify-content: flex-end;
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    font-size: 12px;
-    color: var(--text-color);
-  }
-  
-  .navbar-right li {
-    font-size: larger;
-    padding: 8px 12px;
-  }
-  .navbar-right li:hover{
-    text-decoration: underline;
-  }
-  .navbar-more {
-    display: none;
-    position: absolute;
-    right: 32px;
-    font-size: 24px;
-    color: var(--accent-color);
-  }
-  
-  @media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 8px 24px;
-    }
-  
-    .navbar-menu {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      width: 100%;
-    }
-    ￼ .navbar-menu a {
-      display: block;
-    }
-  
-    .navbar-right {
-      display: none;
-      justify-content: center;
-      width: 100%;
-    }
-  
-    .navbar-more {
-      display: block;
-    }
-  
-    .navbar-menu.active,
-    .navbar-icon.active {
-      display: flex;
-    }
-
-}
 
 section {
   /* padding : 20px; */
   /* margin : 23px; */
   background-color: green;	 
-  height: 600px;
+  height: 550px;
   float:left;
   width:100%;
 }
-/* aside {
-  position: fixed;
-  padding : 20px;
-  right:0;
-  float:right;
-  background-color: goldenrod;
-  width: 15%;
-  height: 100%;
-} */
-/* footer {
-  height: 50px;
-  margin : 23px;
-  background-color: blue;
-  position: relatiev;
-  clear: both;
-  width:82%;
-} */
+
 article {
     margin-top: 10px;
     background-color: #999;

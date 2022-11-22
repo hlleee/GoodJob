@@ -104,46 +104,45 @@
   .login {
     width: 25%;
     height: 150px;
-    background-color: #acbfe1;
+    background-color: #8db2f2;
     padding: 10px;
   }
 
-  .login_idpw {
-    display: block;
-    margin: auto;
-    width: 200px;
-    height: 70px;
-    background-color: #93abf4;
-    padding: 5px;
-  }
+  /* .myinfo {
+    width: 100%;
+    height: 80px;
+    background-color: #4479db;
+  } */
 
-  .login_idpw input {
-    display: block;
-    width: 150px;
-    height: 30px;
-    padding: 10px;
+  .myinfo {
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+    padding-right: 150px;
+    padding-top: 30px;
+    font-size: 12px;
+    width: 100%;
+    height: 60px;
+    background-color: #8db2f2;
   }
-
-  .login_button {
-   
-    margin: auto;
-    width: 200px;
-    height: 30px;
-    background-color: #93abf4;
-    padding: 5px;
+  
+  .myinfo li {
+    font-size: larger;
+    padding: 5px 12px;
   }
-
-  .login_button input {
-   /* padding-left: 5px;  */
+  .myinfo li:hover{
+    text-decoration: underline;
   }
 
   .member {
     margin: auto;
-    width: 250px;
-    height: 46px;
+    width: 100%;
+    height: 20px;
     /* background-color: #8361d4; */
-    padding-left: 80px;
-    /* padding-top: 30px; */
+    padding-right: 60px;
+    padding-top: 0px;
+    
+    background-color: #8db2f2;
   }
 
   /* nav */
@@ -198,11 +197,12 @@
    article {
     display: flex;
     /* margin-top: 10px; */
+    padding: 5px;
     background-color: #999;
   }
 
   .container{
-    padding: 10px;
+    padding: 5px;
     height: 100%;
     width: 100%;
     }
@@ -211,43 +211,76 @@
         width: 35%;
         background-color: #ca0e94;
         display: block;
-        padding: 5px;
+        padding: 3px;
     }
 
-    .area1> .free{
+    /* .area1> .free */
+    .area1> .gesipan{
         background-color: rgb(245, 170, 210);
         width: 100%;
         height: 50%;
-        padding: 10px;
+        padding: 0px;
+        margin: 0px;
         border: 3px solid rgba(11, 26, 192, 0.395)
     }
-    .area1> .question{
-        background-color: rgb(198, 152, 177);
+        /* 모든방 */
+    /* .gesipan{
+        background-color: crimson;
+        padding: 5px;
         width: 100%;
         height: 50%;
-        padding: 10px;
+        padding-top: 0;
+    } */
+    .gesipan > b {
+        padding-top: 0;
+        font-weight: bold;
+    }
+    .gesipan_in{
+        background-color: #03cf5d;
+        /* padding: 10px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    }
+    /* .room{
+        background-color: aqua;
+        margin: 5px;
+    } */
+
+    .room {
+        width: 100%;
+        height: 80px;
+        border: 3px solid rgba(11, 26, 192, 0.395)
+    }
+    
+    .area1> .question{
+        background-color: rgb(198, 152, 177);
+        
+        width: 100%;
+        height: 50%;
+        padding: 0px;
+        margin: 0px;
         border: 3px solid rgba(11, 26, 192, 0.395)
     }
 
-    .area2{
+    .area2 {
         width: 35%;
         background-color: aqua;
         display: block;
         padding: 5px;
     }
 
-    .area2> .interview{
+    .area2 > .interview{
         background-color: rgb(131, 237, 188);
         width: 100%;
         height: 50%;
-        padding: 10px;
+        padding: 0px;
         border: 3px solid rgba(11, 26, 192, 0.395)
     }
-    .area2> .job_review{
+    .area2 > .job_review{
         background-color: rgb(118, 180, 141);
         width: 100%;
         height: 50%;
-        padding: 10px;
+        padding: 0px;
         border: 3px solid rgba(11, 26, 192, 0.395)
     }
 
@@ -262,7 +295,7 @@
         background-color: rgb(118, 180, 141);
         width: 100%;
         height: 100%;
-        padding: 10px;
+        padding: 0px;
         border: 3px solid rgba(11, 26, 192, 0.395)
     }
   /*
@@ -302,15 +335,17 @@
 
 
   /* 푸터 */
-footer {
+
+
+  footer {
     color: black;   
-    height: 100px;
+    /* height: 110px; */
     font-size: 12px;
-    background-color: rgb(85, 85, 212);
-    /* position: absolute; */
+    background-color: rgb(176, 176, 229);
+    position: relative;
     clear: both;
     width:100%;
-    margin: auto;
+    bottom: 0;
   }
   
   .aside_box {
@@ -318,10 +353,12 @@ footer {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #91acd6;
+    padding: 0;
+    margin: 0;
   }
   .area_user {
     flex: 4;
-    line-height: 2em; /* 줄간격 */
+    line-height: 1em; /* 줄간격 */
   }
   .area_user_row {
     display: flex;
@@ -332,28 +369,18 @@ footer {
   .area_user_row ul {
     flex: 6;
   }
-  .aur_title {
+  /* .aur_title {
     font-size: 13px;
     font-weight: bold;
-  }
+  } */
   .area_user_row ul > li {
     display: inline-block; /* li 수평정렬하는 방법 */
     margin-left: 8px;
   }
-  .area_col {
-    flex: 1;
-    display: flex;
-  }
-  .area_col .ac_content {
-    line-height: 20px;
-  }
-  .area_col .ac_img {
-    width: 30px;
-    height: 30px;
-  }
+  
   .bottom_box {
+    
     flex: 2;
-    padding-top: 5px;
     font-size: 14px;
     text-align: center;
   }
@@ -361,7 +388,7 @@ footer {
     display: inline-block; /* 수평정렬 */
     margin-left: 8px;
   }
-  .bottom_box ul > li:last-child { /* 마지막 li요소 (Naver Corp.) 굵게 */
+  .bottom_box ul > li:last-child { /* 마지막 li요소 (굿잡 Corp.) 굵게 */
     font-weight: bold;
   }
   /* 재사용 클래스 */

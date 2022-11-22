@@ -197,8 +197,9 @@ article {
 .gesipan_in{
     background-color: #03cf5d;
     padding: 10px;
+    /* height: 30px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; */
 }
 .room{
     background-color: aqua;
